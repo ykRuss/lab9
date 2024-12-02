@@ -1,0 +1,10 @@
+<h1>Movies</h1>
+<ul>
+    {% for movie in movies %}
+        <li>{{ movie.title }} - {{ movie.release_year }}</li>
+    {% endfor %}
+</ul>
+<h1>Welcome to the Movie Review Site</h1>
+<p>Browse and review movies!</p>
+
+<a href="{% url 'movie_list' %}">Browse Movies</a>

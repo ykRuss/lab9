@@ -1,8 +1,0 @@
-<h1>Movies</h1>
-<ul>
-    {% for movie in movies %}
-        <li>
-            <a href="{% url 'movie_detail' movie.id %}">{{ movie.title }}</a> ({{ movie.release_year }})
-        </li>
-    {% endfor %}
-</ul>
